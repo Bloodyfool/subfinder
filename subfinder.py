@@ -355,7 +355,7 @@ def choose_and_download_subs(subtitles): # main step 5
 
     for index, sub in zip(indeces, to_download):
         new_url = get_next_url(sub['url'])
-        new_name = f"{index}_{sub['name']}.srt"
+        new_name = f"{index}_{sub['name']}.srt".replace("/", ".")
         os.system(f"mkdir -p .{index}_tmp")
         os.system(f"""(
         echo {index} &&
