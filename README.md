@@ -1,6 +1,8 @@
 # Subfinder
 
-This script will find and download subtitles for any video file
+This script will find and download subtitles for movies based on the video file.
+
+This script downloads from [Subscene](https://subscene.com/)
 
 # Usage
 
