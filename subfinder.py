@@ -7,7 +7,17 @@ import re
 import os
 import mechanicalsoup
 
+"""
+File layout:
+    - Helpers
+    - Top-level functions
+    - Main
+"""
+
+
 browser = mechanicalsoup.StatefulBrowser()
+
+"Helpers"
 
 def get_next_url(url):
     browser.open(url)
