@@ -367,6 +367,17 @@ def choose_and_download_subs(subtitles): # main step 5
         ) & disown""")
     time.sleep(3) # should be enough to keep the terminal pretty most of the time
 
+"Series functions"
+
+def get_series_name():
+    """
+    How we know its a show:
+        1. Mulitple files
+        2. Showname.S01E02.something.else.mkv
+        3. Season in the folder name
+    """
+    pass
+
 def main(args):
     video_name = get_file_info(args) # step 1
     print(f"Finding subtitles for: \"{video_name}\"")
